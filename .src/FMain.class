@@ -18,8 +18,9 @@ End
 Public Sub Crono_Timer()
   iPasos = iPasos + 1 
   
-  If iPasos = 3 Then
+  If iPasos = 6 Then
      viborita.crecer()
+     LPuntos.Text = LPuntos.Text + 10
      
      
      iPasos = 1
@@ -31,7 +32,7 @@ Public Sub Crono_Timer()
   
   If (viborita.estasMuerta(DrawingArea1.W, DrawingArea1.H)) Then
        Crono.Stop()
-       Message.Info("sacabóloquesedaba")
+       Message.Info("Otra vez? que triste...")
   Endif
   
   
@@ -61,3 +62,5 @@ Public Sub Form_KeyPress()
   
 
 End
+
+
